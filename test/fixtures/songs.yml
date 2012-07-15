@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  first_time_date: 2012-07-15
+  first_time_show: 
+  last_seen_date: 2012-07-15
+  last_seen_show: 
+  current_gap: 
+
+two:
+  name: MyString
+  first_time_date: 2012-07-15
+  first_time_show: 
+  last_seen_date: 2012-07-15
+  last_seen_show: 
+  current_gap: 
