@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.2'
+gem 'pg'
 gem 'sqlite3'
+gem "handles_sortable_columns"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

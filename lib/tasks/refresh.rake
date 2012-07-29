@@ -20,6 +20,5 @@ task :refresh => :environment do
       )
     end
   end
-  binding.pry
 
-  end
+end

@@ -1,1 +1,42 @@
 %h3 Home
+
+%table{ class: "table table-bordered table-striped" }
+  %thead
+    %tr
+      %th
+        = ""
+      %th{ colspan: "2" }
+        = "First Time Played"
+      %th{ colspan: "2" }
+        = "Last Seen"
+      %th
+        = ""
+    %tr
+      %th
+        = sortable_column "Song", column: "name"
+      %th 
+        = sortable_column "Date", column: "first_time_date"
+      %th 
+        = sortable_column "Show #", column: "first_time_show"
+      %th 
+        = sortable_column "Date", column: "last_seen_date"
+      %th 
+        = sortable_column "Show #", column: "last_seen_show"
+      %th 
+        = sortable_column "Current Gap", column: "current_gap"
+
+  %tbody
+    - @songs.each do |song|
+      %tr
+        %td
+          = song.name
+        %td
+          = song.first_time_date
+        %td
+          = song.first_time_show
+        %td
+          = song.last_seen_date
+        %td
+          = song.last_seen_show
+        %td
+          = song.current_gap
