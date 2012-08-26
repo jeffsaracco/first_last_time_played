@@ -6,3 +6,5 @@ I wanted to be able to sort the data to see what the least/most recent song play
 
 I use a rake task `rake refresh` to refresh the data in the database, which scrapes the page with Nokogiri
 Then use the gem `handles_sortable_columns` and twitter bootstrap to display the data in a sortable table.
+
+Url: http://phishsongs.herokuapp.com
