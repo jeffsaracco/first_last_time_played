@@ -1,3 +1,4 @@
+
 require 'rubygems'
 require 'open-uri'
 
@@ -10,6 +11,7 @@ task :refresh => :environment do
     Song.destroy_all
 
     songs.each do |song|
+      puts "creating #{song[0]}"
       Song.create!(
         name: song[0],
         first_time_date: Date.strptime(song[1], "%m/%d/%y"),
